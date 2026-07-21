@@ -176,15 +176,12 @@ Add screenshots of:
 
 ---
 
-## 👩‍💻 Developer
+## 👥 Contributors
 
-**Sona**
-
-GitHub:
-https://github.com/Sona1018
-
-LinkedIn:
-https://www.linkedin.com/in/sona-270587285
+| Name | GitHub | LinkedIn |
+|------|--------|----------|
+| **Sona** | https://github.com/Sona1018 | https://www.linkedin.com/in/sona-270587285 |
+| **Shabnam Kumari** | https://github.com/Shabnam076 | https://www.linkedin.com/in/shabnam-kumari-a039592b4/ |
 
 ---
 
