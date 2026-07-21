@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:8000/booking",
+  baseURL: `${process.env.REACT_APP_API_URL}/booking`,
 });
 
 export const getAllBookings = () => API.get("/get");

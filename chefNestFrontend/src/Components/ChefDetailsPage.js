@@ -13,7 +13,7 @@ const ChefDetails = () => {
   useEffect(() => {
     const fetchChef = async () => {
       try {
-        const res = await axios.get("http://localhost:8000/chef/get");
+      const res = await axios.get(`${process.env.REACT_APP_API_URL}/chef/get`);
         const found = res.data.data.find((c) => c._id === id);
         setChef(found);
       } catch (err) {
