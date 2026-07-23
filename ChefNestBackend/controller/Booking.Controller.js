@@ -50,7 +50,7 @@ const newBooking = new Booking({
   message: `${name} booked ${service} with ${chefName}`,
   type: "booking",
 });
-await sendEmail(
+sendEmail(
   email,
   "ChefNest Booking Confirmation",
  `
@@ -220,11 +220,11 @@ const updateBooking = async (req, res) => {
       }
 
       if (subject) {
-        await sendEmail(
+         sendEmail(
           updatedBooking.email,
           subject,
           message
-        );
+        ).catch(err => console.error(err));
         
       }
     }
