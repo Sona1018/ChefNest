@@ -58,8 +58,8 @@ const createContact = async (req, res) => {
 
     // Admin Notification Email
     await sendEmail(
-      process.env.EMAIL_USER,
-      "📩 New Contact Form Submission",
+  process.env.ADMIN_EMAIL,
+  "📩 New Contact Form Submission",
       `
         <h2>New Contact Inquiry</h2>
 
