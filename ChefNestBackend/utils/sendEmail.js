@@ -11,8 +11,10 @@ const transporter = nodemailer.createTransport({
 });
 
 const sendEmail = async (to, subject, html) => {
+  console.log("📧 sendEmail called for:", to);
+
   try {
-    await transporter.sendMail({
+    const info = await transporter.sendMail({
       from: `"ChefNest" <${process.env.EMAIL_USER}>`,
       to,
       subject,
@@ -20,6 +22,8 @@ const sendEmail = async (to, subject, html) => {
     });
 
     console.log("✅ Email Sent");
+    console.log("Message ID:", info.messageId);
+    console.log("Response:", info.response);
   } catch (err) {
     console.error("❌ Email Error:", err);
   }
